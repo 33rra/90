@@ -1,0 +1,104 @@
+/* DubrovskyCard.css */
+.dubrovsky-card {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 2rem 2rem 2rem 2rem;
+  background: #fffef7;
+  background-image: radial-gradient(circle at 25% 40%, rgba(210, 180, 140, 0.05) 2%, transparent 2.5%);
+  background-size: 24px 24px;
+  border-radius: 32px;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0e2c5;
+  font-family: 'Georgia', 'Times New Roman', 'Palatino', serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dubrovsky-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 38px -16px rgba(0, 0, 0, 0.25);
+}
+
+.author {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  color: #2c2418;
+  letter-spacing: -0.3px;
+  border-left: 5px solid #b35c2e;
+  padding-left: 1rem;
+  line-height: 1.2;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0.75rem 0;
+  color: #6b3f1c;
+  font-style: normal;
+  border-bottom: 2px dotted #e7dbbc;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #2c2418;
+  margin: 1.5rem 0 2rem 0;
+  text-align: justify;
+  background: #fefaf0;
+  padding: 1rem 1.2rem;
+  border-radius: 24px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.confirm-button {
+  background: #7e3b2c;
+  color: #fff9ef;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-family: inherit;
+  border-radius: 48px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  width: 100%;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.confirm-button:hover {
+  background: #5c2c1f;
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(90, 40, 20, 0.3);
+  letter-spacing: 1.8px;
+}
+
+.confirm-button:active {
+  transform: scale(0.96);
+  background: #05f124;
+}
+
+@media (max-width: 600px) {
+  .dubrovsky-card {
+    margin: 1rem;
+    padding: 1.5rem;
+    max-width: none;
+  } 
+  
+  .author {
+    font-size: 1.75rem;
+  }
+  
+  .title {
+    font-size: 1.35rem;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+}
